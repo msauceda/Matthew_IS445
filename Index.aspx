@@ -30,8 +30,7 @@
     <p style="text-align: left; font-weight: 700; text-decoration: underline; font-style: italic; margin-left: 40px;">
         Education</p>
     <ul style="margin-left: 60px">
-        <li style="text-align: left">2013, Business Administration - MIS, California State University, Long Beach
-        </li>
+        <li style="text-align: left">2013, Business Administration - MIS, California State University, Long Beach</li>
     </ul>
     <p style="text-align: left; font-weight: 700; text-decoration: underline; font-style: italic; margin-left: 40px;">
         Working Experience</p>
