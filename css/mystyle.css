@@ -27,7 +27,8 @@ hr
 }
 nav
 {
-  margin: 2em;  
+    margin: 2em;
+    text-align: right;
 }
 .nav
 {
@@ -49,10 +50,6 @@ form
     border-color: green;
     border-width: medium;
     padding: 10px;
-}
-.fieldsetform
-{
-    width: 500px;
 }
 footer
 {
