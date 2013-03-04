@@ -32,13 +32,14 @@ nav
 }
 .nav
 {
-    padding: 20px;
+    padding: 0px 20px;
+    overflow: hidden;
 }
-a:link
+nav a:link
 {
     text-decoration: none;
 }
-a:hover
+nav a:hover
 {
     text-decoration: underline;
     color: red;
@@ -60,15 +61,16 @@ footer
 .footer
 {
     display: inline;
-    padding: 20px;
+    padding: 0px 20px;
 }
 #aboutphoto
 {
     width: 200px;
+    height: 200px;
     float: right;
 }
 .about
 {
     text-align: left;
-    width: 550px;
+    width: 525px;
 }
