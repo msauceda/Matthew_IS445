@@ -1,5 +1,5 @@
 ﻿
-Partial Class _default
+Partial Class webform
     Inherits System.Web.UI.Page
 
 End Class

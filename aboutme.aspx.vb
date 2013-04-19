@@ -1,5 +1,5 @@
 ﻿
-Partial Class _default
+Partial Class aboutme
     Inherits System.Web.UI.Page
 
 End Class
