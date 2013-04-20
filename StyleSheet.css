@@ -15,13 +15,13 @@ header
 hr
 {
     height: 8px;
-    background-color: green;
+    background-color: darkolivegreen;
 }
 
 h2
 {
     text-align: center;
-    color: darkblue
+    color: darkblue;
 }
 
 h3
@@ -34,26 +34,27 @@ nav
     margin: 2em;
     text-align: right;
 }
+    nav a:link
+    {
+        text-decoration: none;
+    }
+    nav a:hover
+    {
+        text-decoration: underline;
+        color: red;
+        text-transform: uppercase;
+    }
+
 .nav
 {
     padding: 0px 20px;
     overflow: hidden;
 }
-nav a:link
-{
-    text-decoration: none;
-}
-nav a:hover
-{
-    text-decoration: underline;
-    color: red;
-    text-transform: uppercase;
-}
 
 #MainContent
 {
     border-style: solid;
-    border-color: green;
+    border-color: darkseagreen;
     border-width: medium;
     padding: 10px;
 }

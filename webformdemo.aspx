@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPageHW7.master" AutoEventWireup="false" CodeFile="webformdemo.aspx.vb" Inherits="webform" %>
+﻿<%@ Page Title="Web Form Demo" Language="VB" MasterPageFile="~/MasterPageHW7.master" AutoEventWireup="false" CodeFile="webformdemo.aspx.vb" Inherits="webform" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -23,7 +23,7 @@
     </asp:Panel>
     <br />
     <asp:Panel ID="Panel2" runat="server" GroupingText="Room Information">
-        <asp:Label ID="Label4" runat="server" Text="Arrival Date: " AssociatedControlID="ArrivalTimeTextBox"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="Arrival Date: " AssociatedControlID="ArrivalDateTextBox"></asp:Label>
         <asp:TextBox ID="ArrivalDateTextBox" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="ArrivalDateTextBox" runat="server" ErrorMessage="Arrival Date is a required field." ForeColor="Red"></asp:RequiredFieldValidator><br />
         <asp:Label ID="Label5" runat="server" Text="Arrival Time: " AssociatedControlID="ArrivalTimeTextBox"></asp:Label>
@@ -35,10 +35,10 @@
             <asp:ListItem>Standard</asp:ListItem>
             <asp:ListItem>Economic</asp:ListItem>
         </asp:DropDownList><br />
-        <asp:Label ID="Label7" runat="server" Text="Number of nights(valid number is from 1 to 30): " AssociatedControlID="NightsTextBox"></asp:Label>
+        <asp:Label ID="Label7" runat="server" Text="Number of nights (valid number is from 1 to 30): " AssociatedControlID="NightsTextBox"></asp:Label>
         <asp:TextBox ID="NightsTextBox" runat="server"></asp:TextBox>
         <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Invalid number" ForeColor="Red" ControlToValidate="NightsTextBox" MinimumValue="1" MaximumValue="30" Type="Integer"></asp:RangeValidator><br />
-        <asp:Label ID="Label8" runat="server" Text="Number of guests(the maximum guests is 3): " AssociatedControlID="GuestsTextBox"></asp:Label>
+        <asp:Label ID="Label8" runat="server" Text="Number of guests (the maximum guests is 3): " AssociatedControlID="GuestsTextBox"></asp:Label>
         <asp:TextBox ID="GuestsTextBox" runat="server"></asp:TextBox>
         <asp:RangeValidator ID="RangeValidator2" runat="server" ErrorMessage="Invalid number" ForeColor="Red" ControlToValidate="GuestsTextBox" MinimumValue="1" MaximumValue="3" Type="Integer"></asp:RangeValidator>
     </asp:Panel>
@@ -50,7 +50,7 @@
         <asp:TextBox ID="SpecialNotesTextBox" runat="server" Columns="40" Rows="5" TextMode="MultiLine" placeholder="Enter your special requests here"></asp:TextBox>
     </asp:Panel>
     <br />
-    <asp:Button ID="Reset1" runat="server" Text="Clear Form" />
+    <asp:Button ID="Reset1" runat="server" Text="Clear Form" OnClientClick="this.form.reset(); return false;" />
     <asp:Button ID="Submit1" runat="server" Text="Request Reservation" />
     <br />
     <br />

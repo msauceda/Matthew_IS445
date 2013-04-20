@@ -18,7 +18,7 @@
         </header>
         
         <section id="MainContent">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">                
             </asp:ContentPlaceHolder>
         
         <footer>
